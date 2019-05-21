@@ -197,41 +197,47 @@ body p {
 }
 .nav .nav-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   width: 500px;
+  height: 100%;
 }
 .nav .nav-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.2rem;
   font-weight: 500;
   color: #565656;
   text-decoration: none;
-  border: 1px solid rgba(118, 50, 63, 0);
-  border-radius: 5px;
-  padding: 5px;
+  border-bottom: 2px solid rgba(118, 50, 63, 0);
+  height: 100%;
+  width: 100%;
   transition: 0.5s;
 }
 .nav .nav-links a:hover {
   color: #76323f;
-  border: 1px solid #76323f;
+  border-bottom: 2px solid #76323f;
 }
 .hero {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
   position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
 }
 .hero .hero-content {
-  max-width: 80%;
   position: relative;
-  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 80%;
+  z-index: 2;
 }
 .hero .hero-content h1 {
   font-size: 4rem;
