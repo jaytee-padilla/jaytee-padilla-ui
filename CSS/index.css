@@ -200,14 +200,14 @@ body p {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 500px;
+  width: 400px;
   height: 100%;
 }
 .nav .nav-links a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #565656;
   text-decoration: none;
@@ -237,12 +237,18 @@ body p {
   flex-direction: column;
   align-items: center;
   max-width: 80%;
+  width: 500px;
   z-index: 2;
 }
 .hero .hero-content h1 {
   font-size: 4rem;
   margin-bottom: 24px;
   color: white;
+}
+.hero .hero-content p {
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
 }
 .hero .hero-content .button {
   width: fit-content;
