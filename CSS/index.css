@@ -191,9 +191,17 @@ body p {
   background: white;
   z-index: 9999;
 }
+@media (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+    padding: 0;
+    height: 80px;
+  }
+}
 .nav .nav-logo-container img {
   width: 50px;
-  height: auto;
+}
+@media (max-width: 500px) {
 }
 .nav .nav-links {
   display: flex;
@@ -203,6 +211,14 @@ body p {
   width: 400px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .nav .nav-links {
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
 .nav .nav-links a {
   display: flex;
   justify-content: center;
@@ -211,10 +227,17 @@ body p {
   font-weight: 500;
   color: #565656;
   text-decoration: none;
-  border-bottom: 2px solid rgba(118, 50, 63, 0);
+  border-bottom: 0 solid rgba(118, 50, 63, 0);
   height: 100%;
   width: 100%;
+  white-space: nowrap;
   transition: 0.5s;
+}
+@media (max-width: 500px) {
+  .nav .nav-links a {
+    white-space: nowrap;
+    width: auto;
+  }
 }
 .nav .nav-links a:hover {
   color: #76323f;
@@ -237,7 +260,7 @@ body p {
   flex-direction: column;
   align-items: center;
   max-width: 80%;
-  width: 500px;
+  width: 800px;
   z-index: 2;
 }
 .hero .hero-content h1 {
@@ -268,6 +291,7 @@ body p {
   height: 100%;
   width: 100%;
   filter: blur(10px) brightness(85%);
+  transform: scale(1.1);
   z-index: 1;
 }
 .content-container {
@@ -281,8 +305,18 @@ body p {
   max-width: 95%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .content-container .grid {
+    margin-top: 20px;
+  }
+}
 .content-container .grid .row {
   display: flex;
+}
+@media (max-width: 500px) {
+  .content-container .grid .row {
+    flex-direction: column;
+  }
 }
 .content-container .grid .row .row-img-container {
   display: flex;
@@ -290,6 +324,26 @@ body p {
   align-content: center;
   justify-content: center;
   width: 50%;
+}
+.content-container .grid .row .row-img-container .team-member {
+  max-width: 95%;
+  max-height: 95%;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .content-container .grid .row .row-img-container .team-member {
+    align-self: center;
+    margin-bottom: 20px;
+  }
+}
+.content-container .grid .row .row-img-container #alex-king {
+  min-width: 95%;
+  min-height: 95%;
+}
+@media (max-width: 500px) {
+  .content-container .grid .row .row-img-container {
+    width: 100%;
+  }
 }
 .content-container .grid .row img {
   max-height: 500px;
@@ -303,6 +357,11 @@ body p {
   width: 50%;
   padding: 10%;
 }
+@media (max-width: 500px) {
+  .content-container .grid .row .row-content {
+    width: 100%;
+  }
+}
 .content-container .grid .row .row-content h2 {
   color: #76323f;
   font-size: 2.2rem;
@@ -311,4 +370,9 @@ body p {
 }
 .content-container .grid .reverse {
   flex-direction: row-reverse;
+}
+@media (max-width: 500px) {
+  .content-container .grid .reverse {
+    flex-direction: column;
+  }
 }

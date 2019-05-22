@@ -28,11 +28,20 @@ body {
     background: white;
     z-index: 9999;
 
+    @media @mobile {
+        flex-direction: column;
+        padding: 0;
+        height: 80px;
+    }
+
     .nav-logo-container {
 
         img {
             width: 50px;
-            height: auto;
+        }
+
+        @media @mobile {
+            // margin-bottom: -10px;
         }
     }
 
@@ -44,6 +53,13 @@ body {
         width: 400px;
         height: 100%;
 
+        @media @mobile {
+            justify-content: space-evenly;
+            width: 100%;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
         a {
             display: flex;
             justify-content: center;
@@ -52,10 +68,16 @@ body {
             font-weight: 500;
             color: @color-blackboard;
             text-decoration: none;
-            border-bottom: 2px solid rgba(118, 50, 63, 0);
+            border-bottom: 0 solid rgba(118, 50, 63, 0);
             height: 100%;
             width: 100%;
+            white-space: nowrap;
             transition: 0.5s;
+
+            @media @mobile {
+                white-space: nowrap;
+                width: auto;
+            }
 
             &:hover {
                 color: @color-oxblood;
@@ -82,7 +104,7 @@ body {
         flex-direction: column;
         align-items: center;
         max-width: 80%;
-        width: 500px;
+        width: 800px;
         z-index: 2;
 
         h1 {
@@ -118,6 +140,7 @@ body {
         height: 100%;
         width: 100%;
         filter: blur(10px) brightness(85%);
+        transform: scale(1.1);
         z-index: 1;
     }
 }
@@ -133,8 +156,16 @@ body {
         max-width: 95%;
         margin: 0 auto;
 
+        @media @mobile {
+            margin-top: 20px;
+        }
+
         .row {
             display: flex;
+
+            @media @mobile {
+                flex-direction: column;
+            }
 
             .row-img-container {
                 display: flex;
@@ -142,6 +173,26 @@ body {
                 align-content: center;
                 justify-content: center;
                 width: 50%;
+
+                .team-member {
+                    max-width: 95%;
+                    max-height: 95%;
+                    cursor: pointer;
+
+                    @media @mobile {
+                        align-self: center;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                #alex-king {
+                    min-width: 95%;
+                    min-height: 95%;
+                }
+
+                @media @mobile {
+                    width: 100%;
+                }
             }
 
             img {
@@ -157,6 +208,10 @@ body {
                 width: 50%;
                 padding: 10%;
 
+                @media @mobile {
+                    width: 100%;
+                }
+
                 h2 {
                     color: @color-oxblood;
                     font-size: 2.2rem;
@@ -168,6 +223,10 @@ body {
 
         .reverse {
             flex-direction: row-reverse;
+
+            @media @mobile {
+                flex-direction: column;
+            }
         }
     }
 }
