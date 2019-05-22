@@ -187,56 +187,49 @@ body p {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  padding: 0 40px;
+  padding: 0 20px;
   background: white;
-  z-index: 9999;
+  z-index: 100;
 }
 @media (max-width: 500px) {
   .nav {
+    position: relative;
+    height: 90px;
     flex-direction: column;
     padding: 0;
-    height: 80px;
   }
 }
 .nav .nav-logo-container img {
   width: 50px;
 }
-@media (max-width: 500px) {
-}
 .nav .nav-links {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   text-align: center;
-  width: 400px;
   height: 100%;
 }
 @media (max-width: 500px) {
   .nav .nav-links {
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 0;
-    padding-top: 0;
+    padding: 0 20px;
   }
 }
 .nav .nav-links a {
   display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 1rem;
   font-weight: 500;
   color: #565656;
   text-decoration: none;
+  padding: 0 20px;
   border-bottom: 0 solid rgba(118, 50, 63, 0);
-  height: 100%;
-  width: 100%;
   white-space: nowrap;
   transition: 0.5s;
 }
 @media (max-width: 500px) {
   .nav .nav-links a {
-    white-space: nowrap;
-    width: auto;
+    flex: 1;
+    padding: 0;
   }
 }
 .nav .nav-links a:hover {
@@ -253,6 +246,12 @@ body p {
   overflow: hidden;
   height: 100vh;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .hero {
+    position: relative;
+    height: calc(100vh - 90px);
+  }
 }
 .hero .hero-content {
   position: relative;
@@ -294,12 +293,22 @@ body p {
   transform: scale(1.1);
   z-index: 1;
 }
+@media (max-width: 500px) {
+  .hero .hero-bg {
+    transform: scale(1.2);
+  }
+}
 .content-container {
   top: 100vh;
   position: relative;
   width: 100%;
   background: white;
   padding: 30px 0;
+}
+@media (max-width: 500px) {
+  .content-container {
+    top: 0;
+  }
 }
 .content-container .grid {
   max-width: 95%;
@@ -325,24 +334,55 @@ body p {
   justify-content: center;
   width: 50%;
 }
+@media (max-width: 500px) {
+  .content-container .grid .row .row-img-container {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .content-container .grid .row .row-img-container .book-img {
+    max-height: 200px;
+  }
+}
 .content-container .grid .row .row-img-container .team-member {
   max-width: 95%;
   max-height: 95%;
+  width: 65%;
   cursor: pointer;
 }
 @media (max-width: 500px) {
   .content-container .grid .row .row-img-container .team-member {
     align-self: center;
+    width: 90%;
     margin-bottom: 20px;
   }
 }
 .content-container .grid .row .row-img-container #alex-king {
-  min-width: 95%;
-  min-height: 95%;
+  min-width: 65%;
 }
 @media (max-width: 500px) {
-  .content-container .grid .row .row-img-container {
-    width: 100%;
+  .content-container .grid .row .row-img-container #alex-king {
+    min-width: 90%;
+  }
+}
+.content-container .grid .row .row-img-container .left-img {
+  align-self: flex-end;
+  margin-right: 10px;
+}
+@media (max-width: 500px) {
+  .content-container .grid .row .row-img-container .left-img {
+    align-self: center;
+    margin-right: 0;
+  }
+}
+.content-container .grid .row .row-img-container .right-img {
+  align-self: flex-start;
+  margin-left: 10px;
+}
+@media (max-width: 500px) {
+  .content-container .grid .row .row-img-container .right-img {
+    align-self: center;
+    margin-left: 0;
   }
 }
 .content-container .grid .row img {
@@ -360,13 +400,15 @@ body p {
 @media (max-width: 500px) {
   .content-container .grid .row .row-content {
     width: 100%;
+    margin: 25px 0;
+    padding: 5%;
   }
 }
 .content-container .grid .row .row-content h2 {
   color: #76323f;
   font-size: 2.2rem;
   font-weight: 700;
-  margin: 10px 0;
+  margin-bottom: 15px;
 }
 .content-container .grid .reverse {
   flex-direction: row-reverse;
