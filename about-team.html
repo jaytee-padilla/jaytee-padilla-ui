@@ -42,70 +42,75 @@
             <p>We are a team of talented and passionate Lambda School students working and learning together</p>
         </div>
 
-        <img class="hero-bg" src="/assets/books_05.jpeg">
+        <img class="hero-bg" src="/assets/books.jpg">
     </div>
 
     <section class="content-container">
         <div class="grid">
             <div class="row">
-
-                <div class="row-img-container">
-                    <img class="team-member left-img" id="alex-king" src="assets/team-members/alex-king.jpg" alt="Alex King">
+                <div class="column-container">
+                    <img class="team-member left-img" src="assets/team-members/alex-king.jpg" id="alex-king"
+                        data-person="alex-king" alt="Alex King">
                 </div>
-                <div class="row-img-container">
-                    <img class="team-member right-img" src="assets/team-members/basil-ogbonna.jpg" alt="Basil Ogbonna">
+                <div class="column-container">
+                    <img class="team-member right-img" src="assets/team-members/basil-ogbonna-02.jpg" data-person="basil-ogbonna" alt="Basil Ogbonna">
                 </div>
-
             </div>
 
             <div class="row">
-
-                <div class="row-img-container">
-                    <img class="team-member left-img" src="assets/team-members/christopher_aronson.png" alt="Christopher Aronson">
+                <div class="column-container">
+                    <img class="team-member left-img" src="assets/team-members/christopher_aronson.png" data-person="christopher-aronson"
+                        alt="Christopher Aronson">
                 </div>
-                <div class="row-img-container">
-                    <img class="team-member right-img" src="assets/team-members/daniel-carter.jpg" alt="Daniel Carter">
+                <div class="column-container">
+                    <img class="team-member right-img" src="assets/team-members/daniel-carter.jpg" data-person="daniel-carter" alt="Daniel Carter">
                 </div>
-
             </div>
 
             <div class="row">
-
-                <div class="row-img-container">
-                    <img class="team-member left-img" src="assets/team-members/darien-payton.png" alt="Darien Payton">
+                <div class="column-container">
+                    <img class="team-member left-img" src="assets/team-members/darien-payton.png" data-person="darien-payton" alt="Darien Payton">
                 </div>
-                <div class="row-img-container">
-                    <img class="team-member right-img" src="assets/team-members/donald-celaj.png" alt="Donald Celaj">
+                <div class="column-container">
+                    <img class="team-member right-img" src="assets/team-members/donald-celaj.png" data-person="donald-celaj" alt="Donald Celaj">
                 </div>
-
             </div>
 
             <div class="row">
-
-                <div class="row-img-container">
-                    <img class="team-member left-img" src="assets/team-members/james-starks.jpg" alt="James Starks">
+                <div class="column-container">
+                    <img class="team-member left-img" src="assets/team-members/james-starks.jpg" data-person="james-starks" alt="James Starks">
                 </div>
-                <div class="row-img-container">
-                    <img class="team-member right-img" src="assets/team-members/jaytee-padilla.jpg" alt="Jaytee Padilla">
+                <div class="column-container">
+                    <img class="team-member right-img" src="assets/team-members/jaytee-padilla.jpg" data-person="jaytee-padilla" alt="Jaytee Padilla">
                 </div>
-
             </div>
 
             <div class="row">
-
-                <div class="row-img-container">
-                    <img class="team-member left-img" src="assets/team-members/laura-daugherty.jpg" alt="Laura Daugherty">
+                <div class="column-container">
+                    <img class="team-member left-img" src="assets/team-members/laura-daugherty.jpg" data-person="laura-daugherty" alt="Laura Daugherty">
                 </div>
-                <div class="row-img-container">
-                    <img class="team-member right-img" src="assets/team-members/peter-stone.png" alt="Peter Stone">
+                <div class="column-container">
+                    <img class="team-member right-img" src="assets/team-members/peter-stone.png" data-person="peter-stone" alt="Peter Stone">
                 </div>
-
             </div>
         </div>
 
-    </section>
+    </section> <!-- END section content-container -->
 
-    <script src="" async defer></script>
+    <div class="modal" data-person="alex-king">
+        <div class="modal-content">
+            <span class="close-button">X</span>
+
+            <h2 class="name">Alex King</h2>
+            <h3 class="role">Project Role: Project Lead</h3>
+
+            <p class="location">Location: Seattle, WA</p>
+            <p class="favorite-book">Favorite Book: The Power of Now</p>
+            <a href="https://github.com/alex-ak" target="_blank"><p class="github">Github</p></a>
+        </div>
+    </div>
+
+    <script src="javascript/about-team.js" async defer></script>
 </body>
 
 </html>
