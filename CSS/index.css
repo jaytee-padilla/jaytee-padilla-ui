@@ -186,6 +186,13 @@ body p {
   line-height: 1.8;
   font-weight: 500;
 }
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html ::-webkit-scrollbar {
+  display: none;
+}
 .nav {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
   position: fixed;
@@ -248,7 +255,11 @@ body p {
 }
 .nav .nav-links a:hover {
   color: #76323f;
-  border-bottom: 2px solid #76323f;
+  border-bottom: 3px solid #76323f;
+}
+.nav .nav-links .active {
+  color: #76323f;
+  border-bottom: 3px solid #76323f;
 }
 .hero {
   position: fixed;
@@ -479,9 +490,20 @@ body p {
   margin-bottom: 5px;
   color: #76323f;
 }
+@media (max-width: 900px) {
+  .modal .modal-content .name {
+    font-size: 2rem;
+  }
+}
 .modal .modal-content .role {
   font-size: 1.6rem;
   margin-bottom: 8px;
+}
+@media (max-width: 900px) {
+  .modal .modal-content .role {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 }
 .modal .modal-content .github {
   margin-top: 10px;
@@ -509,4 +531,7 @@ body p {
   transform: scale(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
   z-index: 3;
+}
+.lock-scrolling {
+  overflow: hidden;
 }

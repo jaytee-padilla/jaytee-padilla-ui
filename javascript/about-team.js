@@ -2,6 +2,7 @@
 const teamMember = document.querySelectorAll('.team-member');
 const modal = document.querySelectorAll('.modal');
 const closeButton = document.querySelectorAll('.close-button');
+const htmlElement = document.getElementsByTagName('html');
 
 // Target DOM elements of each team member's modal info
 const alexKing = document.querySelector('.alex-king');
@@ -39,6 +40,8 @@ closeButton.forEach(btnElement => {
 
 // Toggles the modal view on and off
 function toggleModal(name) {
+    htmlElement[0].classList.add('lock-scrolling');
+    
     switch (name) {
         case 'alex-king':
             alexKing.classList.toggle('show-modal');
@@ -76,5 +79,6 @@ function toggleModal(name) {
 function removeModal() {
     modal.forEach(modalElement => {
         modalElement.classList.remove('show-modal');
+        htmlElement[0].classList.remove('lock-scrolling');
     });
 }

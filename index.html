@@ -13,6 +13,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/animations.css">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
         </div>
 
         <div class="nav-links">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="https://reading-recommender.netlify.com/">Login</a>
             <a href="https://reading-recommender.netlify.com/">Sign Up</a>
             <a href="about-team.html">About Team</a>
@@ -48,42 +49,54 @@
 
     <section class="content-container">
         <div class="grid">
-            <div class="row">
-                <div class="column-container">
+            <div class="row animatedParent">
+                <div class="column-container animated fadeInLeftShort">
                     <img class="book-img" src="assets/books_02.jpg">
                 </div>
 
-                <div class="row-content">
+                <div class="row-content animated fadeInRightShort">
                     <h2>What We Do</h2>
-                    <p>Reading Recommender has brought together the top literature specialists, data analysts, and web gurus from across the globe to bring you access to some of the best books you will ever read. By taking one easy quiz, approximately five minutes of your time, a world of literary possibilities will open up before you with Reading Recommender</p>
+                    <p>Reading Recommender has brought together the top literature specialists, data analysts, and web
+                        gurus from across the globe to bring you access to some of the best books you will ever read. By
+                        taking one easy quiz, approximately five minutes of your time, a world of literary possibilities
+                        will open up before you with Reading Recommender</p>
                 </div>
             </div>
 
-            <div class="row reverse">
-                <div class="column-container">
+            <div class="row reverse animatedParent">
+                <div class="column-container animated fadeInRightShort">
                     <img class="book-img" src="assets/books_06.jpg">
                 </div>
 
-                <div class="row-content">
+                <div class="row-content animated fadeInLeftShort">
                     <h2>Our Data</h2>
-                    <p>Our world class team of Data Scientists have harnessed the power of the most popular books and the art of psychology to offer you the perfect reading choice. After painstakingly scouring lines of data and categorizing them specifically for our secret algorithm, our scientists use cutting edge psychological testing to suggest the perfect book for your enjoyment</p>
+                    <p>Our world class team of Data Scientists have harnessed the power of the most popular books and
+                        the art of psychology to offer you the perfect reading choice. After painstakingly scouring
+                        lines of data and categorizing them specifically for our secret algorithm, our scientists use
+                        cutting edge psychological testing to suggest the perfect book for your enjoyment</p>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="column-container">
+            <div class="row animatedParent">
+                <div class="column-container animated fadeInLeftShort">
                     <img class="book-img" src="assets/books_04.jpg">
                 </div>
 
-                <div class="row-content">
+                <div class="row-content animated fadeInRightShort">
                     <h2>Our Books</h2>
-                    <p>Our team of reading specialists has delivered the power of 50 of the greatest books of all time straight to your fingertips. The books we recommend span the generations from ancient to modern. They encompass the most popular genres literature has to offer, from spiritual to mystery - we have the perfect book for you! Utilizing the power of pure unadulterated search engine data, our expert team exclusively offers you - THE 50 GREATEST BOOKS OF ALL TIME</p>
+                    <p>Our team of reading specialists has delivered the power of 50 of the greatest books of all time
+                        straight to your fingertips. The books we recommend span the generations from ancient to modern.
+                        They encompass the most popular genres literature has to offer, from spiritual to mystery - we
+                        have the perfect book for you! Utilizing the power of pure unadulterated search engine data, our
+                        expert team exclusively offers you - THE 50 GREATEST BOOKS OF ALL TIME</p>
                 </div>
             </div>
         </div>
     </section> <!-- END section content-container -->
 
-    <script src="" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="javascript/css3-animate-it.js" async defer></script>
 </body>
 
 </html>

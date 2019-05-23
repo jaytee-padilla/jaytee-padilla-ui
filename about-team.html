@@ -13,11 +13,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/animations.css">
 </head>
 
 <body>
     <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+            <p class="brow animatedParentsehappy">You are using an <strong>outdated</strong> brow animatedParentser. Please <a href="#">upgrade your brow animatedParentser</a> to improve your experience.</p>
         <![endif]-->
 
     <nav class="nav">
@@ -31,7 +32,7 @@
             <a href="index.html">Home</a>
             <a href="https://reading-recommender.netlify.com/">Login</a>
             <a href="https://reading-recommender.netlify.com/">Sign Up</a>
-            <a href="about-team.html">About Team</a>
+            <a href="about-team.html" class="active">About Team</a>
         </div>
     </nav>
 
@@ -47,57 +48,57 @@
 
     <section class="content-container">
         <div class="grid">
-            <div class="row">
+            <div class="row animatedParent">
                 <div class="column-container">
-                    <img class="team-member left-img" src="assets/team-members/alex-king.jpg" id="alex-king"
+                    <img class="team-member left-img animated fadeInLeftShort" src="assets/team-members/alex-king.jpg" id="alex-king"
                         data-person="alex-king" alt="Alex King">
                 </div>
                 <div class="column-container">
-                    <img class="team-member right-img" src="assets/team-members/basil-ogbonna-02.jpg"
+                    <img class="team-member right-img animated fadeInRightShort" src="assets/team-members/basil-ogbonna-02.jpg"
                         data-person="basil-ogbonna" alt="Basil Ogbonna">
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row animatedParent">
                 <div class="column-container">
-                    <img class="team-member left-img" src="assets/team-members/christopher_aronson.png"
+                    <img class="team-member left-img animated fadeInLeftShort" src="assets/team-members/christopher_aronson.png"
                         data-person="christopher-aronson" alt="Christopher Aronson">
                 </div>
                 <div class="column-container">
-                    <img class="team-member right-img" src="assets/team-members/daniel-carter.jpg"
+                    <img class="team-member right-img animated fadeInRightShort" src="assets/team-members/daniel-carter.jpg"
                         data-person="daniel-carter" alt="Daniel Carter">
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row animatedParent">
                 <div class="column-container">
-                    <img class="team-member left-img" src="assets/team-members/darien-payton.png"
+                    <img class="team-member left-img animated fadeInLeftShort" src="assets/team-members/darien-payton.png"
                         data-person="darien-payton" alt="Darien Payton">
                 </div>
                 <div class="column-container">
-                    <img class="team-member right-img" src="assets/team-members/donald-celaj.png"
+                    <img class="team-member right-img animated fadeInRightShort" src="assets/team-members/donald-celaj.png"
                         data-person="donald-celaj" alt="Donald Celaj">
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row animatedParent">
                 <div class="column-container">
-                    <img class="team-member left-img" src="assets/team-members/james-starks.jpg"
+                    <img class="team-member left-img animated fadeInLeftShort" src="assets/team-members/james-starks.jpg"
                         data-person="james-starks" alt="James Starks">
                 </div>
                 <div class="column-container">
-                    <img class="team-member right-img" src="assets/team-members/jaytee-padilla.jpg"
+                    <img class="team-member right-img animated fadeInRightShort" src="assets/team-members/jaytee-padilla.jpg"
                         data-person="jaytee-padilla" alt="Jaytee Padilla">
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row animatedParent">
                 <div class="column-container">
-                    <img class="team-member left-img" src="assets/team-members/laura-daugherty.jpg"
+                    <img class="team-member left-img animated fadeInLeftShort" src="assets/team-members/laura-daugherty.jpg"
                         data-person="laura-daugherty" alt="Laura Daugherty">
                 </div>
                 <div class="column-container">
-                    <img class="team-member right-img" src="assets/team-members/peter-stone.png"
+                    <img class="team-member right-img animated fadeInRightShort" src="assets/team-members/peter-stone.png"
                         data-person="peter-stone" alt="Peter Stone">
                 </div>
             </div>
@@ -263,8 +264,10 @@
         </div>
     </div>
 
-
     <script src="javascript/about-team.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="javascript/css3-animate-it.js" async defer></script>
 </body>
 
 </html>
