@@ -1,0 +1,70 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 30rem;
+        border-radius: 0.5rem;
+
+        @media @mobile {
+            width: 90%;
+        }
+
+        .name {
+            width: 80%;
+            font-size: 2.6rem;
+            margin-bottom: 5px;
+            color: @color-oxblood;
+        }
+
+        .role {
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+        }
+
+        .github {
+            margin-top: 10px;
+            img {
+                width: 40px;
+            }
+        }
+
+        .close-button {
+            float: right;
+            width: 1.5rem;
+            line-height: 1.5rem;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border-radius: 0.25rem;
+            color: @color-blackboard;
+        }
+
+        .close-button:hover {
+            color: @color-oxblood;
+        }
+    }
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 3;
+}

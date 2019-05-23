@@ -2,6 +2,17 @@ body {
     width: 100%;
     color: @color-blackboard;
     font-family: 'Raleway', sans-serif;
+    animation: fadein 2s;
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
 
     h1,
     h2 {
