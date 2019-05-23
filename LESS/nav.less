@@ -23,35 +23,39 @@
 
         img {
             width: 50px;
+
+            @media @mobile {
+                width: 40px;
+            }
         }
     }
 
     .nav-links {
         display: flex;
-        text-align: center;
         height: 100%;
 
         @media @mobile {
             justify-content: space-evenly;
             width: 100%;
-            padding: 0 20px;
+            padding: 0 10px;
         }
 
         a {
             display: flex;
             align-items: center;
+            text-align: center;
             font-size: 1rem;
             font-weight: 500;
             color: @color-blackboard;
             text-decoration: none;
             padding: 0 20px;
             border-bottom: 0 solid rgba(118, 50, 63, 0);
-            white-space: nowrap;
             transition: 0.5s;
 
             @media @mobile {
-                flex: 1;
-                padding: 0;
+                justify-content: space-evenly;
+                white-space: nowrap;
+                overflow: auto;
             }
 
             &:hover {
