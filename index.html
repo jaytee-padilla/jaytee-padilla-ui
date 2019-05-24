@@ -9,10 +9,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Reading Recommender</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/animations.css">
 </head>
 
 <body>
@@ -22,79 +23,80 @@
 
     <nav class="nav">
         <div class="nav-logo-container">
-            <a href="#">
+            <a href="index.html">
                 <img src="assets/RR_Logo.png">
             </a>
         </div>
 
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Login</a>
-            <a href="#">Sign Up</a>
-            <a href="#">About Team</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="https://reading-recommender.netlify.com/">Login</a>
+            <a href="https://reading-recommender.netlify.com/">Sign Up</a>
+            <a href="about-team.html">About Team</a>
         </div>
     </nav>
 
     <div class="hero">
         <div class="hero-content">
-            <h1>Books & Books & Books</h1>
+            <h1>Wondering what to read next?</h1>
+            <h1>Can't choose a book by its cover?</h1>
 
-            <a class="button hero-button" href="#">Get Started</a>
+            <a class="button hero-button" href="https://reading-recommender.netlify.com/">Get Started</a>
         </div>
 
-        <img class="hero-bg" src="/assets/books.jpg">
+        <img class="hero-bg" src="/assets/books_05.jpeg">
     </div>
 
     <section class="content-container">
         <div class="grid">
-            <div class="row">
-                <div class="row-img-container">
-                    <img src="assets/books_02.jpg">
+            <div class="row animatedParent">
+                <div class="column-container animated fadeInLeftShort">
+                    <img class="book-img" src="assets/books_02.jpg">
                 </div>
 
-                <div class="row-content">
-                    <h2>Header</h2>
-                    <p>Forgive my manners. I don't see many ladies these days. Lucky for the ladies. I pledge my life
-                        and honor to the Night's Watch, for this night and all the nights to come. As High as Honor. The
-                        Knight of Lemonwood. When you play the game of thrones, you win or you die. I pledge my life and
-                        honor to the Night's Watch, for this night and all the nights to come. The tourney of Ashford
-                        Meadows.</p>
-                </div>
-            </div>
-
-            <div class="row reverse">
-                <div class="row-img-container">
-                    <img src="assets/books_03.jpg">
-                </div>
-
-                <div class="row-content">
-                    <h2>Header</h2>
-                    <p>Forgive my manners. I don't see many ladies these days. Lucky for the ladies. I pledge my life
-                        and honor to the Night's Watch, for this night and all the nights to come. As High as Honor. The
-                        Knight of Lemonwood. When you play the game of thrones, you win or you die. I pledge my life and
-                        honor to the Night's Watch, for this night and all the nights to come. The tourney of Ashford
-                        Meadows.</p>
+                <div class="row-content animated fadeInRightShort">
+                    <h2>What We Do</h2>
+                    <p>Reading Recommender has brought together the top literature specialists, data analysts, and web
+                        gurus from across the globe to bring you access to some of the best books you will ever read. By
+                        taking one easy quiz, approximately five minutes of your time, a world of literary possibilities
+                        will open up before you with Reading Recommender</p>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="row-img-container">
-                    <img src="assets/books_04.jpg">
+            <div class="row reverse animatedParent">
+                <div class="column-container animated fadeInRightShort">
+                    <img class="book-img" src="assets/books_06.jpg">
                 </div>
 
-                <div class="row-content">
-                    <h2>Header</h2>
-                    <p>Forgive my manners. I don't see many ladies these days. Lucky for the ladies. I pledge my life
-                        and honor to the Night's Watch, for this night and all the nights to come. As High as Honor. The
-                        Knight of Lemonwood. When you play the game of thrones, you win or you die. I pledge my life and
-                        honor to the Night's Watch, for this night and all the nights to come. The tourney of Ashford
-                        Meadows.</p>
+                <div class="row-content animated fadeInLeftShort">
+                    <h2>Our Data</h2>
+                    <p>Our world class team of Data Scientists have harnessed the power of the most popular books and
+                        the art of psychology to offer you the perfect reading choice. After painstakingly scouring
+                        lines of data and categorizing them specifically for our secret algorithm, our scientists use
+                        cutting edge psychological testing to suggest the perfect book for your enjoyment</p>
+                </div>
+            </div>
+
+            <div class="row animatedParent">
+                <div class="column-container animated fadeInLeftShort">
+                    <img class="book-img" src="assets/books_04.jpg">
+                </div>
+
+                <div class="row-content animated fadeInRightShort">
+                    <h2>Our Books</h2>
+                    <p>Our team of reading specialists has delivered the power of 50 of the greatest books of all time
+                        straight to your fingertips. The books we recommend span the generations from ancient to modern.
+                        They encompass the most popular genres literature has to offer, from spiritual to mystery - we
+                        have the perfect book for you! Utilizing the power of pure unadulterated search engine data, our
+                        expert team exclusively offers you - THE 50 GREATEST BOOKS OF ALL TIME</p>
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!-- END section content-container -->
 
-    <script src="" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="javascript/css3-animate-it.js" async defer></script>
 </body>
 
 </html>
