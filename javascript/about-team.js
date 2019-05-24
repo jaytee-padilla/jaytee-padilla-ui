@@ -18,8 +18,10 @@ const peterStone = document.querySelector('.peter-stone');
 
 // Add event listeners
 teamMember.forEach(nodeElement => {
-    nodeElement.addEventListener('click', (event) => {
+    nodeElement.addEventListener('click', event => {
         toggleModal(nodeElement.dataset.person);
+
+        toggleFadeIn();
     });
 });
 
@@ -28,18 +30,21 @@ window.addEventListener('click', (event) => {
 
     if (event.target === showModal) {
         removeModal();
+        toggleFadeIn();
     }
 });
 
 closeButton.forEach(btnElement => {
     btnElement.addEventListener('click', (event) => {
         removeModal();
+        toggleFadeIn();
     })
 })
 
 
 // Toggles the modal view on and off
 function toggleModal(name) {
+    // Locks scrolling functionality while modal view is open
     htmlElement[0].classList.add('lock-scrolling');
     
     switch (name) {
@@ -82,3 +87,29 @@ function removeModal() {
         htmlElement[0].classList.remove('lock-scrolling');
     });
 }
+
+function toggleFadeIn() {
+    teamMember.forEach(nodeElement => {
+        nodeElement.classList.toggle('notransition');
+    });
+}
+
+// To prevent mobile taps from reactivating fade animation when a modal view is activated
+// function removeAnimation() {
+//     teamMember.forEach(nodeElement => {
+//         nodeElement.classList.forEach(classListElement => {
+//             if(classListElement === 'fadeInRightShort') {
+//                 nodeElement.classList.remove('fadeInRightShort');
+//             } else if (classListElement === 'fadeInLeftShort') {
+//                 nodeElement.classList.remove('fadeInLeftShort');
+//             }
+//         });
+//     })
+// }
+
+// Re-adds animation class for page to function properly after modal view is closed
+// function addAnimation(nodeElement) {
+//     teamMember.forEach(nodeElement => {
+//         nodeElement.classList.add
+//     })
+// }
